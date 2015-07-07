@@ -1,0 +1,27 @@
+{
+    "version": "1.5.0-alpha",
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "jsx": "react",
+        "declaration": false,
+        "noImplicitAny": false,
+        "removeComments": true,
+        "noLib": false,
+        "preserveConstEnums": true,
+        "suppressImplicitAnyIndexErrors": true
+    },
+    "filesGlob": [
+        "./**/*.ts",
+        "./**/*.tsx",
+        "!node_modules/**/*.ts",
+        "!node_modules/**/*.tsx"
+    ],
+    "files": [
+        "./app/bootstrap.ts",
+        "./app/components/callback-container.ts",
+        "./app/components/caller.ts",
+        "./app/components/interfaces.ts",
+        "./app/components/receiver.ts"
+    ]
+}
