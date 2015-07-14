@@ -20,6 +20,8 @@
         "!./node_modules/**/*"
     ],
     "files": [
+        "./app/components/app.ts",
+        "./app/components/i-use-singletons.ts",
         "./app/components/service-as-singleton.ts"
     ]
 }
