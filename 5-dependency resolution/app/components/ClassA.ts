@@ -1,4 +1,7 @@
-export class ClassA implements InterfaceA {
+import InterfaceA = require('./InterfaceA.d');
+
+class ClassA implements InterfaceA {
+
     url: string;
 
     constructor(url: string) {
@@ -9,9 +12,4 @@ export class ClassA implements InterfaceA {
         console.log('Hello');
     }
 }
-
-export interface InterfaceA {
-    url: string;
-    
-    greet();
-}
+export = ClassA;
