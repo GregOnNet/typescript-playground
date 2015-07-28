@@ -1,6 +1,7 @@
-import I = require('./IIoC');
+import IIoC = require('./IIoC.d');
+import Resolvable = require('./Resolvable');
 
-export class IoC implements I.IIoC {
+class IoC implements IIoC {
 
     instances: Array<Resolvable>;
 
@@ -26,16 +27,4 @@ export class IoC implements I.IIoC {
         console.log(this.instances);
     }
 }
-
-export class Resolvable implements I.IAmResolvable {
-
-    name: string;
-    instance: Object;
-
-    constructor(name: string, instance: Object) {
-        this.name = name;
-        this.instance = instance;
-
-        console.info(instance.constructor);
-    }
-}
+export = IoC;

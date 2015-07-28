@@ -21,8 +21,10 @@
     ],
     "files": [
         "./app/components/ClassA.ts",
-        "./app/components/IIoC.ts",
+        "./app/components/IAmResolvable.d.ts",
+        "./app/components/IIoC.d.ts",
         "./app/components/IoC.ts",
+        "./app/components/Resolvable.ts",
         "./app/components/app.ts"
     ]
 }
