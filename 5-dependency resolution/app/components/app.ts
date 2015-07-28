@@ -1,12 +1,12 @@
 import IoC        = require('../core/IoC');
 import Resolvable = require('../core/Resolvable');
-import c          = require('./ClassA');
+import ClassA     = require('./ClassA');
+import InterfaceA     = require('./InterfaceA');
 
-var classA = new c.ClassA('http://google.de');
+var classA = new ClassA('http://google.de');
 
 var ioc = new IoC();
     ioc.register(new Resolvable('classA', classA));
-    var resolved:c.InterfaceA = ioc.resolve<c.InterfaceA>('classA');
-    resolved.greet();
 
-    ioc.printAll();
+    var resolved = ioc.resolve<InterfaceA>('classA');
+        resolved.greet();

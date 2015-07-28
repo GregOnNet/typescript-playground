@@ -21,6 +21,7 @@
     ],
     "files": [
         "./app/components/ClassA.ts",
+        "./app/components/InterfaceA.d.ts",
         "./app/components/app.ts",
         "./app/core/IAmResolvable.d.ts",
         "./app/core/IIoC.d.ts",
