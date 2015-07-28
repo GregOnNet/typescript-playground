@@ -1,5 +1,5 @@
-import IoC        = require('./IoC');
-import Resolvable = require('./Resolvable');
+import IoC        = require('../core/IoC');
+import Resolvable = require('../core/Resolvable');
 import c          = require('./ClassA');
 
 var classA = new c.ClassA('http://google.de');
